@@ -1,0 +1,28 @@
+{
+  "name": "wqcloud-video",
+  "version": "0.0.1",
+  "description": "腾讯云视频Node.js SDK",
+  "main": "src/index.js",
+  "dependencies": {
+    "@dwing/common": "^1.1.2",
+    "debug": "*",
+    "querystring": "^0.2.0",
+    "request": "*"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-dwing": "^1.0.2"
+  },
+  "keywords": [
+    "api",
+    "qcloud",
+    "sdk",
+    "open",
+    "open-api",
+    "video",
+    "stream"
+  ],
+  "repository": "git@github.com:AirDwing/wqcloud-video.git",
+  "author": "willin <willin@willin.org>",
+  "license": "MIT"
+}
