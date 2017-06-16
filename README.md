@@ -37,10 +37,26 @@ var options = {
 
 ## 操作类/查询类接口
 
-查询直播状态示例:
+设置直播状态示例:
 
 ```js
 // API调用地址为： http://fcgi.video.qcloud.com/common_access
+const { fcgi } = require('wqcloud-video');
+
+const qcloud = fcgi({
+  appid: '1234567890',
+  appkey: 'aabbccddeeffgghhiijjkkmmnnooppqq'
+});
+
+qcloud.Live_Channel_SetStatus({
+  channel_id: '8888_test',
+  status: 1
+}).then(console.log).catch(console.err);
+```
+
+查询直播状态示例:
+
+```js
 const { fcgi } = require('wqcloud-video');
 
 const qcloud = fcgi({
