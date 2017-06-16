@@ -35,6 +35,22 @@ var options = {
 }
 ```
 
+## 推流生成器
+
+```js
+const { getPushUrl } = require('wqcloud-video');
+
+console.log(
+  getPushUrl({
+    bizid: 8888,
+    streamid: 'test',
+    key: 'aabbccdd001122333444', // 注意,这里是 推流防盗链Key
+    expires: 3600
+  })
+);
+// trmp://8888.livepush.myqcloud.com/live/8888_test?bizid=8888&txTime=5943874C&txSecret=ffc8cc832447ea92335df69970e6ce25
+```
+
 ## 操作类/查询类接口
 
 设置直播状态示例:
@@ -45,7 +61,7 @@ const { fcgi } = require('wqcloud-video');
 
 const qcloud = fcgi({
   appid: '1234567890',
-  appkey: 'aabbccddeeffgghhiijjkkmmnnooppqq'
+  appkey: 'aabbccddeeffgghhiijjkkmmnnooppqq' // 注意,这里是 API鉴权Key
 });
 
 qcloud.Live_Channel_SetStatus({
