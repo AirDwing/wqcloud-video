@@ -71,7 +71,23 @@ qcloud.Live_Channel_GetStatus({
 
 ## 统计类接口
 
-TODO: 由于暂时没有权限,所以无法进行开发测试.
+查询指定直播流的推流和播放信息示例: 
+
+```js
+// API调用地址为： http://statcgi.video.qcloud.com/common_access
+const { statcgi } = require('wqcloud-video');
+
+const qcloud = statcgi({
+  appid: '1234567890',
+  appkey: 'aabbccddeeffgghhiijjkkmmnnooppqq'
+});
+
+qcloud.Get_LiveStat({
+  stream_id: '8888_test'
+}).then((data) => {
+  console.log(JSON.stringify(data, null, 2));
+}).catch(console.err);
+```
 
 ## 事件消息通知
 
