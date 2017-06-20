@@ -16,3 +16,12 @@ exports.getPushUrl = ({ bizid = 0, streamid = '', key = '', expires = 3600 } = {
   debug('wqcloud:common:params')(query);
   return `trmp://${bizid}.livepush.myqcloud.com/live/${livecode}?${qs.stringify(query)}`;
 };
+
+exports.getPlayUrl = ({ bizid = 0, streamid = '' }) => {
+  const livecode = `${bizid}_${streamid}`;
+  return {
+    rtmp: `rtmp://${bizid}.liveplay.myqcloud.com/live/${livecode}`,
+    flv: `http://${bizid}.liveplay.myqcloud.com/live/${livecode}.flv`,
+    m3u8: `http://${bizid}.liveplay.myqcloud.com/live/${livecode}.m3u8`
+  };
+};

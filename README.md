@@ -4,6 +4,21 @@
 
 [![npm](https://img.shields.io/npm/v/wqcloud-video.svg?style=plastic)](https://npmjs.org/package/wqcloud-video) [![npm](https://img.shields.io/npm/dm/wqcloud-video.svg?style=plastic)](https://npmjs.org/package/wqcloud-video) [![npm](https://img.shields.io/npm/dt/wqcloud-video.svg?style=plastic)](https://npmjs.org/package/wqcloud-video)
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [安装和使用](#%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8)
+- [参数说明](#%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)
+- [推流生成器](#%E6%8E%A8%E6%B5%81%E7%94%9F%E6%88%90%E5%99%A8)
+- [直播观看地址生成器](#%E7%9B%B4%E6%92%AD%E8%A7%82%E7%9C%8B%E5%9C%B0%E5%9D%80%E7%94%9F%E6%88%90%E5%99%A8)
+- [操作类/查询类接口](#%E6%93%8D%E4%BD%9C%E7%B1%BB%E6%9F%A5%E8%AF%A2%E7%B1%BB%E6%8E%A5%E5%8F%A3)
+- [统计类接口](#%E7%BB%9F%E8%AE%A1%E7%B1%BB%E6%8E%A5%E5%8F%A3)
+- [事件消息通知](#%E4%BA%8B%E4%BB%B6%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5)
+- [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 安装和使用
 
 国际惯例：
@@ -49,6 +64,22 @@ console.log(
   })
 );
 // trmp://8888.livepush.myqcloud.com/live/8888_test?bizid=8888&txTime=5943874C&txSecret=ffc8cc832447ea92335df69970e6ce25
+```
+
+## 直播观看地址生成器
+
+```js
+const { getPlayUrl } = require('wqcloud-video');
+
+console.log(
+  getPlayUrl({
+    bizid: 8888,
+    streamid: 'test'
+  })
+);
+//{ rtmp: 'rtmp://8888.liveplay.myqcloud.com/live/8888_test',
+//  flv: 'http://8888.liveplay.myqcloud.com/live/8888_test.flv',
+//  m3u8: 'http://8888.liveplay.myqcloud.com/live/8888_test.m3u8' }
 ```
 
 ## 操作类/查询类接口
