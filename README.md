@@ -15,6 +15,7 @@
 - [操作类/查询类接口](#%E6%93%8D%E4%BD%9C%E7%B1%BB%E6%9F%A5%E8%AF%A2%E7%B1%BB%E6%8E%A5%E5%8F%A3)
 - [统计类接口](#%E7%BB%9F%E8%AE%A1%E7%B1%BB%E6%8E%A5%E5%8F%A3)
 - [事件消息通知](#%E4%BA%8B%E4%BB%B6%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5)
+- [相关文档](#%E7%9B%B8%E5%85%B3%E6%96%87%E6%A1%A3)
 - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -139,6 +140,12 @@ qcloud.Get_LiveStat({
 ## 事件消息通知
 
 TODO: 下一个版本进行完善
+
+## 相关文档
+
+- vod(点播): <https://www.qcloud.com/document/product/266/8757>
+- lvb(直播): <https://www.qcloud.com/document/product/267/5956>
+- 您可能还会用到 `WQcloud`完整SDK: <https://github.com/willin/wqcloud>
 
 ## License
 
