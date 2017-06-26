@@ -1,6 +1,6 @@
 {
   "name": "wqcloud-video",
-  "version": "0.0.6",
+  "version": "1.0.1",
   "description": "腾讯云视频Node.js SDK",
   "main": "src/index.js",
   "scripts": {
