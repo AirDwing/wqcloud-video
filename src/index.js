@@ -14,7 +14,7 @@ exports.getPushUrl = ({ bizid = 0, streamid = '', key = '', expires = 3600 } = {
   };
   query.txSecret = md5(`${key}${livecode}${query.txTime}`);
   debug('wqcloud:common:params')(query);
-  return `trmp://${bizid}.livepush.myqcloud.com/live/${livecode}?${qs.stringify(query)}`;
+  return `rtmp://${bizid}.livepush.myqcloud.com/live/${livecode}?${qs.stringify(query)}`;
 };
 
 exports.getPlayUrl = ({ bizid = 0, streamid = '' }) => {
