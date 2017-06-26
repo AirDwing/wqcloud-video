@@ -64,7 +64,7 @@ console.log(
     expires: 3600
   })
 );
-// trmp://8888.livepush.myqcloud.com/live/8888_test?bizid=8888&txTime=5943874C&txSecret=ffc8cc832447ea92335df69970e6ce25
+// rtmp://8888.livepush.myqcloud.com/live/8888_test?bizid=8888&txTime=5943874C&txSecret=ffc8cc832447ea92335df69970e6ce25
 ```
 
 ## 直播观看地址生成器
